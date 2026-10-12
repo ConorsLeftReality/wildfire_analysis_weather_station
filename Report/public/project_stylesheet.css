@@ -1,0 +1,307 @@
+/* CSS STYLESHEET FOR ALL WEBPAGES IN COURSEWORK */
+/* STYLESHEET DIVIDED INTO UNIVERSAL AND NON-UNIVERSAL ELEMENT SECTIONS */
+
+
+
+/* ========================= UNIVERSAL ELEMENTS START========================= */
+
+/* Fonts for Site */
+nav, a {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+html {
+	font-family: system-ui;
+}
+
+/* lets make the full html page usable (remove the invisible borders for responsiveness)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+	background: #0C0C0C; /*Oil Black - #0C0C0C*/
+}
+.title {
+	margin-top: 2rem;
+	margin: auto;
+	width: 90vw;
+	border: 6px double #232023; /*Eerie Black*/
+	text-align: center;
+	background-color:#121212; /*Charcoal Gray*/
+	color: #FAF9F6; /*Off White*/
+	padding: 1rem;
+	border-radius: 0.5rem
+}
+.title hr {
+  	border: none;
+  	height: 2px;
+  	background-color: #FAF9F6; /*Off White*/
+  	width: 35vw;
+  	margin: 20px auto;
+}
+/* Nav Bar stuff, so fun, so reactive */
+header nav ul {
+	/* pretty-fication */
+	background-color:#161618; /*Jet Black*/
+	color: #FAF9F6; /*Off White*/
+	list-style: none;
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+    gap: 2rem;
+	padding: 1rem;
+	font-size: 0.9rem;
+}
+header nav ul li a{
+	/* pretty-fication */
+	color: #FAF9F6; /*Off White*/
+	transition: 0.3s;
+	text-decoration: none;
+	/* give the virtual boxes its own personal space */
+	float: left;
+	padding: 0.4rem 0.6rem;
+}
+header nav ul li a:hover {
+	/* ooooooo how fancy */
+	transform: scale(1.1);
+	background-color: #4C4C4E; /*Davy's gray*/
+	color: #161618; /*Jet Black*/
+}
+
+footer {
+	/* pretty-fication */
+	background: #121212; /*Charcoal Gray*/
+    color: #FAF9F6; /*Off White*/
+    padding: 2rem 0;
+	margin-top: 2rem;
+    text-align: center;
+}
+
+/* ======================= UNIVERSAL ELEMENTS END ======================= */
+/* ====================================================================== */
+/* ======================= NON-UNIVERSAL ELEMENTS START ======================= */
+
+.welcome_page {
+	/* pretty-fication */
+	background-color: #121212; /*Charcoal Gray*/
+	color: #FAF9F6; /*Off White*/
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 2rem;
+	/* center the island */
+	margin: auto;
+	padding: 0.4rem 0.6rem;
+	width: 80vw;
+}
+.welcome_page h2 {
+	/* big and powerful heading */
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 1.7rem;
+}
+.welcome_page p {
+	/* everything comfortable in the section */
+	font-size: 1rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+.welcome_page h3 {
+	text-align: center;
+	font-size: 1.3rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+hr {
+  	border: none;
+  	height: 2px;
+  	background-color: #FAF9F6; /*Off White*/
+  	width: 4vw;
+  	margin: 20px auto;
+}
+/* Video Island for the Index Page */ 
+.video_island {
+	gap: 2rem;
+	background-color: #121212; /*Charcoal Gray*/
+	color: #FAF9F6; /*Off White*/
+	margin: auto;
+	padding: 0.5rem 0;
+	width: 80vw;
+	/* Bottom of the pages radius*/
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 2rem;
+}
+.video_island h2 {
+	font-size: 1.5rem;
+	text-align: center;
+}
+.video_island p {
+	text-align: center;
+}
+.video_island video {
+	/* lets center this massive block of a thing */
+	display: block;
+	margin: 0 auto;
+	padding: 2rem;
+	/* and lets make it a good size */
+	max-width: 80vw;
+	max-height: 50vw;
+}
+
+.word_count_page {
+	background-color: #121212; /*Charcoal Gray*/
+	color: #FAF9F6; /*Off White*/
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 0.5rem;
+	/* center the island */
+	margin: auto;
+	padding: 0.4rem 0.6rem;
+	width: 80vw;
+}
+.word_count_page h2 {
+	/* big and powerful heading */
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 1.7rem;
+}
+.word_count_page table {
+	/* everything comfortable in the section */
+	text-align: center;
+	font-size: 1rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 0.5rem;
+	
+}
+.word_count_page table {
+	/* everything comfortable in the section */
+	text-align: center;
+	font-size: 1rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 0.5rem;
+	/* Table Specific Layout */
+	table-layout: fixed;
+	width: 90%;
+	margin: 10px auto;
+	border-collapse: collapse;
+}
+.word_count_page tr th {
+	background-color: #FAF9F6;
+	color: #121212;
+	padding: 1em;
+}
+.word_count_page tr td {
+	vertical-align: top;
+	background-color: #121212;
+	color: #FAF9F6;
+	padding: 0.4em;
+}
+/* ===================== NON-UNIVERSAL ELEMENTS END ===================== */
+/* ==================== CONTENT BLOCK STYLES START ===================== */
+.content_block {
+	/* pretty-fication */
+	background-color: #121212; /*Charcoal Gray*/
+	color: #FAF9F6; /*Off White*/
+	/* curves curves and more curves*/
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 2rem;
+	/* center the island */
+	margin: auto;
+	padding: 0.4rem 0.6rem;
+	width: 80vw;
+}
+.content_block h2 {
+	/* big and powerful heading */
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 1.7rem;
+}
+.content_block p {
+	/* everything comfortable in the section */
+	font-size: 1rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-top: 1.0rem;
+	margin-bottom: 1.0rem;
+}
+.content_block ol {
+	/* organise well inside section */
+	font-size: 0.9rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+.content_block .reference_list {
+	/* organise well inside section */
+	font-size: 0.8rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+.content_block ol a{
+	/* organise well inside section */
+	color: rgb(255, 255, 255);
+	line-height: 1.8
+}
+.content_block ol a:hover{
+	/* organise well inside section */
+	transition: 0.2s;
+	color: rgb(0, 102, 255);
+}
+.content_block ol a:visited{
+	/* organise well inside section */
+	color: rgb(169, 169, 169);
+}
+.content_block .project_image {
+  	max-height: 40rem;
+	width: 90%;
+	object-fit: contain;
+	display: block;
+  	margin: auto;
+	border-radius: 1rem;
+}
+.content_block .codesnap {
+	width: 90%;
+  	max-height: 90%;
+	object-fit: contain;
+	display: block;
+  	margin: auto;
+	border-radius: 1rem;
+	margin-top: -50px;
+	margin-bottom: -50px;
+	clip-path: inset(-50px 0 50px 0);
+}
+.content_block .wildfire_image {
+	width: 90%;
+  	max-height: 90%;
+	object-fit: contain;
+	display: block;
+  	margin: auto;
+	border-radius: 1rem;
+	margin-top: -160px;
+	margin-bottom: -140px;
+	clip-path: inset(160px 0 140px 0);
+}
+.image-text {
+	text-align: center;
+	margin-top: 1.0rem;
+	margin-bottom: 1.0rem;
+}
+.references-list {
+	font-size: 1rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+.note-text {
+	text-align: center;
+	margin-top: 1.0rem;
+	margin-bottom: 1.0rem;
+}
+/* ==================== CONTENT BLOCK STYLES END ===================== */

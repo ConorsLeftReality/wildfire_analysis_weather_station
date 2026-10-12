@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="public/project_stylesheet.css">
+<body>
+	<head>
+		<title>Portfolio | Investigation</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<header>
+		<section class=title>
+			<h1>LCCS | Investigation | Project Report 2026</h1>
+			<br/>
+			<h2>Student Name: Conor Masterson</h2>
+			<h2>Examination Number: REDACTED</h2>
+		</section>
+
+		<br/>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="brief.html">Meeting the Brief</a></li>
+				<li><a href="investigation.html">Investigation</a></li>
+				<li><a href="plan_and_design.html">Plan and Design</a></li>
+				<li><a href="create.html">Create</a></li>
+				<li><a href="evaluation.html">Evaluation</a></li>
+				<li><a href="references.html">References</a></li>
+				<li><a href="summary.html">Word Count</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<br/>
+
+	<main>
+		<section class="content_block">
+			<br>
+			<p>
+				As I started on my investigation for this year's LCCS brief, I had to decide which real-world process I wanted to simulate, and Wildfire Risk was a real-world process that stood out to me.
+			</p>
+			<br>
+		</section>
+		<br><br>
+		<section class="content_block">
+		<hr>
+			<h2>
+				Wildfire Risk
+			</h2>
+			<br>
+			<img class="wildfire_image" src="public/ashcroft_canada_wildfire.jpg" alt="Wildfire in Look Lake, Ashcroft Reserve, BC, Canada">
+			<p class="image-text">
+				Photo of a Wildfire in Ashcroft Reserve from Look Lake, Ashcroft Reserve, British Columbia, Canada
+			</p>
+		<hr>
+			<p>
+				Wildfires are a major weather event that has a strong impact on many countries worldwide. 
+				I recalled an instance during 4th year, where my friend was in Canada and got a wildfire warning on his phone. 
+				This system interested me, but because of the brief, I thought more about the early detection of wildfires, and how people calculate fire risk.
+			</p>
+			<br>
+			<img class="project_image" src="public\understanding_fwi_ciffc_training_manual_cover.jpg" alt="Cover to the FWI CIFFC Training Manual, found on Amazon as ISBN 0-7785-0076-4">
+			<p class="image-text">
+				Cover to the FWI CIFFC Training Manual, ISBN 0-7785-0076-4
+			</p>
+		<br>
+			<p>
+				I learnt about the Canadian Forest Fire Weather Index (FWI), originally developed by C.E. Van Wagner and T.L. Pickett in 1985 
+				as a mathematical program for calculating Fire Risk using Temperature, Humidity, Windspeed and Rainfall. 
+				The documentation and original FORTRAN source code is well documented, though I mainly read the equations for information into how this system works overall. 
+			</p>
+			<p>
+				My overall opinion on the CFFWI is very positive, and for that reason, 
+				I wanted to make the python simulation model and embedded system with this system in mind throughout.
+			</p>
+		<br>
+		</section>
+		<br><br>
+		<section class="content_block">
+			<hr>
+				<h2>
+					Embedded-System Definition
+				</h2>
+			<hr>
+				<p>
+					Before planning my embedded system, I decided to read into the official LCCS Brief further 
+					to find the explicit regulations for what our embedded system had to be.
+				</p>
+				<br>
+		</section>
+		<br>
+		<section class="content_block">
+			<br>
+				<p>
+					As per this year's official SEC guidelines, an “Embedded System” must:
+				</p>
+			<br>
+				<ol>
+					<li>
+						Have at least one digital input and at least one analogue input.
+					</li>
+					<li>
+						Generate at least one primary output which can be either digital or analogue
+					</li>
+					<li>
+						Be started or calibrated manually but should operate automatically once started.
+					</li>
+					<li>
+						Be started or calibrated manually but should operate automatically once started.
+					</li>
+					<li>
+						Collect and store environmental data that relates to your chosen theme.
+					</li>
+					<li>
+						Run tests to show how the system responds using different inputs or changing environmental data.
+					</li>
+					<li>
+						For AR3, include a feedback mechanism that enables it to adapt automatically to changing conditions (Note that the adaptive response can be either physical or virtual)
+					</li>
+				</ol>
+			<br>
+		</section>
+		<br><br>
+		<section class="content_block">
+			<br>
+				<p>
+					From these guidelines, I can confidently say that the Raspberry Pi 3 Model B is a suitable embedded system for this project
+				</p>
+			<br>
+				<img class="project_image" src="public/raspberry_pi_3b.jpg" height="400px" alt="Raspberry Pi 3B 1Gb Model, made in 2015 by the Raspberry Pi Foundation">
+			<br>
+				<p>
+					Considering that the microbit was made for children aged 8-14 (me being one of them in 2015), 
+					I decided that the Raspberry Pi would be a better embedded system solely due to its familiarity 
+					(I have used the Raspberry Pi since 2018) and because I would find the microbit too simple, therefore leaving me disappointed.
+				</p>
+			<br>
+		</section>
+		
+	</main>
+	
+	<footer>
+		<p>2026 LCCS Project | Conor Masterson | REDACTED</p>
+	</footer>
+</body>
+</html>
